@@ -37,7 +37,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-2 w-full justify-between py-5 lg:px-10 xl:px-20 px-1">
+    <div className="grid grid-cols-2 w-full justify-between py-5 lg:px-10 xl:px-20 px-0">
       <div className="flex justify-start items-center">
         <h1 className="text-3xl font-medium uppercase">
           <NavLink to="/">Muhammad<span className="text-accent">.</span></NavLink>

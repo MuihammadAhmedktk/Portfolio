@@ -1,11 +1,10 @@
-// import Hero from "../componets/Hero/Hero"
-import { IoDownloadOutline } from "react-icons/io5";
 import Soical from "../componets/Soical";
 import Photo from "../componets/Photo";
 import Stats from "../componets/Stats";
+import MyCv from "../componets/myCv";
 const Home = () => {
   return (
-    <div className="h-full">
+    <div className="h-full pt-10">
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pl-8 xl:pb-24">
           {/* text */}
@@ -18,10 +17,7 @@ const Home = () => {
               </p>
               {/* button */}
               <div className="flex flex-col xl:flex-row items-center gap-8">
-                <button className="uppercase flex items-center gap-2 border-accent border px-4 py-2 rounded-full  ">
-                  <span className="text-accent">Download CV</span>
-                  <IoDownloadOutline className="text-xl text-accent"/>
-                </button>
+                <MyCv/>
                 <div className="mb-8 xl:mb-0">
                     <Soical containerStyle="flex gap-6"
                      iconStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500 "/>

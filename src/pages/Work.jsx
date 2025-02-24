@@ -85,10 +85,10 @@ const Work = () => {
                 {/* overlay */}
                 <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                 {/* image */}
-                  <div className="relative w-full ">
+                  <div className="relative w-[100%] ">
                     <img
                       src={project.Image}
-                      className=" object-cover"
+                      className=" object-cover w-[100vw]"
                       alt="Project"
 
                     />
