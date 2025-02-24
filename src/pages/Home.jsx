@@ -1,7 +1,7 @@
-import Soical from "../componets/Soical";
-import Photo from "../componets/Photo";
-import Stats from "../componets/Stats";
-import MyCv from "../componets/myCv";
+import Soical from "../components/Soical";
+import Photo from "../components/Photo";
+import Stats from "../components/Stats";
+import MyCv from "../components/myCv";
 const Home = () => {
   return (
     <div className="h-full pt-10">

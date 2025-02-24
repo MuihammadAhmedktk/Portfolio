@@ -5,7 +5,7 @@ import 'swiper/css';
 import thumb1 from '../assets/thumb1.png'
 
 import { useState } from "react";
-import WorksSliderBtns from "../componets/Button/WorksSliderBtns";
+import WorksSliderBtns from "../components/Button/WorksSliderBtns";
 
 const Projects =[
   {
