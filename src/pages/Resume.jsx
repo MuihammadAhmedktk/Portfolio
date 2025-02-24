@@ -1,4 +1,4 @@
-import AllInfo from "../componets/AllInfo/AllInfo"
+import AllInfo from "../components/AllInfo/AllInfo"
 import { heading, ExperData,Button } from "../Date"
 
 const Resume = () => {
