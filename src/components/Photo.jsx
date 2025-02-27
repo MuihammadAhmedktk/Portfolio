@@ -1,5 +1,5 @@
 
-import  Image from "../assets/photo_1.png"
+import  Image from "../assets/Photo_1.png"
 const Photo = () => {
   return (
     <div className="w-full h-full relative">
