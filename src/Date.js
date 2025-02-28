@@ -10,7 +10,7 @@ export const Data = [
         num: '02',
         heading:'HTML/CSS Development',
         text:` Writing semantic HTML and modular, maintainable CSS.
-        Using modern CSS frameworks like Bootstrap, Tailwind, or custom solutions for layout .`,
+        Using modern CSS frameworks like Bootstrap, Tailwind, or custom solutions for layout `,
     },
     {
         num: '03',

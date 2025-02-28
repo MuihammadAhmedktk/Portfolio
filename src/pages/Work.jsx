@@ -37,7 +37,7 @@ const Work = () => {
           const currentSlide = Swiper.activeIndex;
           setProject(Projects[currentSlide]);}
   return (
-    <div className="min-h-[80vh] flex flex-col py-12 justify-center xl:px-0">
+    <div className="max-h-[80vh] flex flex-col xl:mt-[2rem] lg:mt-[25rem] md:mt-[18rem] sm:mt-[15rem] xs:mt-[15rem] mt-[12rem] justify-center">
     <div className="container mx-auto ">
             <div className="flex flex-col xl:flex-row xl:gap-[30px]">
                 <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">

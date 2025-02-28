@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 const MyInfo = ({ heading, ExperData, isAboutUs, SkillsData }) => {
     return (
-      <div className="grid grid-rows-1 place-content-center items-center  ">
+      <div className="grid grid-rows-1 lg:place-content-center items-center  ">
         {heading.map(({ headings, para }, index) => (
           <div key={index} className="flex flex-col gap-[30px] ">
             <h2 className="text-4xl font-bold">{headings}</h2>
@@ -11,55 +11,17 @@ const MyInfo = ({ heading, ExperData, isAboutUs, SkillsData }) => {
         ))}
   
         {isAboutUs ? (
-          <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
           {ExperData?.map((data, index) => {
 
             return(
-              <li key={index} className="flex items-center justify-center xl:justify-start gap-4">
+              <li key={index} className="flex items-center justify-start  gap-4">
                   <span className="text-white/60">{data.label}</span>
                   <span className="text-xl">{data.field}</span>
 
               </li>
             )
           }
-            // <div key={index} className=" grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
-            //   {/* Left Section */}
-            //   <div >
-            //     {[
-            //       { label: "Name", value: data.name },
-            //       { label: "Experience", value: data.Experience },
-            //       { label: "Nationality", value: data.Nationality },
-            //       { label: "Freelance", value: data.Freelance },
-            //     ].map(({ label, value }, idx) => (
-            //       <div key={idx} className="  ">
-            //         <div className=" ">
-            //           <label className="text-md">{label}</label>
-            //         </div>
-            //         <div className=" ">
-            //           <p>{value}</p>
-            //         </div>
-            //       </div>
-            //     ))}
-            //   </div>
-        
-            //   {/* Right Section */}
-            //   <div className="">
-            //     {[
-            //       { label: "Phone", value: data.Phone },
-            //       { label: "Email", value: data.Email },
-            //       { label: "Language", value: data.language },
-            //     ].map(({ label, value }, idx) => (
-            //       <div key={idx} className="   ">
-            //         <div className="">
-            //           <label className="text-md ">{label}</label>
-            //         </div>
-            //         <div>{value}</div>
-            //       </div>
-            //     ))}
-            //   </div>
-            // </div>
-
-
           )}
         </ul>
         

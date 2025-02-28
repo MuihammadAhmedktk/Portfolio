@@ -61,7 +61,7 @@ const [activeButton, setActiveButton] = useState('Experience');
   const { heading: selectedHeading, data: selectedData, type } = selectedInfo; // Destructured selectedInfo
 
   return (
-    <div className="container mx-auto grid grid-row xl:grid-cols-2 place-content-center ">
+    <div className="container mx-auto grid grid-row xl:grid-cols-2 lg:place-content-center ">
       <div className="flex flex-col gap-[60px] ">
         <MultipleButton setShowData={handleButtonClick} Button={Button} activeButton={activeButton} />
       </div>
