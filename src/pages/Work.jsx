@@ -10,22 +10,22 @@ import WorksSliderBtns from "../components/Button/WorksSliderBtns";
 const Projects =[
   {
       num:"01",
-      category:"Frontend",
-      title:"Frontend Project",
-      desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      stack:[{name:"HTML 5"}, {name:"CSS 3"}, {name:"JavaScript"}, {name:"React"}],
+      category:"Portfolio",
+      title:"GnWelding Portfolio",
+      desc:"Professional welding services specializing in precision welding, fabrication, and repairs. Quality craftsmanship for industrial, commercial, and custom projects",
+      stack:[{name:"Tailwind Css"},  {name:"React"},],
       Image: thumb1,
-      live:"",
+      live:"https://gnwelding.netlify.app/",
       github:"",
   },
   {
       num:"02",
-      category:"Frontend",
-      title:"Frontend Project",
-      desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      stack:[{name:"HTML 5"}, {name:"CSS 3"}, {name:"JavaScript"}, {name:"React"}],
+      category:"Blog",
+      title:"Trend Scribe",
+      desc:"Welcome to Trend Scribe, your go-to platform for insightful articles and fresh perspectives. We cover topics ranging from technology and lifestyle to health and education. Explore, learn, and share your thoughts with us!.",
+      stack:[{name:"Tailwind Css"}, {name:"React"}, {name:"TypeScript"}, {name:"Node ts"}, {name:"ExpressJs"}, {name:"MongoDB"}],
       Image:thumb1,
-      live:"",
+      live:"https://trendscribe-3y6o.onrender.com",
       github:"",
   }
 
@@ -48,7 +48,7 @@ const Work = () => {
                         </div>
                         {/* category */}
                         <h2 className='text-[42px] font-bold text-white capitalize group-hover:text-accent 
-                        leading-none transition-all duration-500'>{project.category} Project</h2>
+                        leading-none transition-all duration-500'>{project.title}</h2>
                         {/* descprition */}
                         <p className=' text-white/60'>{project.desc}</p>
                         {/* stack */}
@@ -59,15 +59,31 @@ const Work = () => {
                                 {item.name}
                                 {index !== project.stack.length-1 && ','}
                                 </li>
+                                
                                 );
                             })}
                         </ul>
                         <div className='border border-white/20'></div>
                         {/* button */}
                         <div className='flex items-center gap-4'>
-                            <div className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group' ><a  href="#"><PiArrowUpRightLight className="text-white text-4xl group-hover:text-accent"/></a></div>
-                            <div className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group' ><a  href="#"><FaGithub className="text-white text-4xl group-hover:text-accent"/></a></div>
-                        </div>
+                      {/* Live Link */}
+                      {project.live && (
+                        <a href={project.live} target="_blank" rel="noopener noreferrer">
+                          <div className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group'>
+                            <PiArrowUpRightLight className="text-white text-4xl group-hover:text-accent" />
+                          </div>
+                        </a>
+                      )}
+                      
+                      {/* GitHub Link */}
+                      {project.github && (
+                        <a href={project.github} target="_blank" rel="noopener noreferrer">
+                          <div className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group'>
+                            <FaGithub className="text-white text-4xl group-hover:text-accent" />
+                          </div>
+                        </a>
+                      )}
+                    </div>
                     </div>
                     
                     </div>

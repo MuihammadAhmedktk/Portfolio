@@ -6,8 +6,8 @@ const Services = () => {
   return (
     <div className="min-h-[80vh] flex flex-col justify-center  xl:py-3">
       <div className="container mx-auto flex justify-center">
-        <div className=" max-h-[50vh] overflow-y-auto overscroll-contain scroll-smooth scrollbar-thin scrollbar-track-gray-800 scrollbar-thumb-gray-500 p-4">
-          <div className="grid grid-cols-2 gap-[40px]">
+        <div className=" max-h-[60vh] xl:max-h-[80vh] overflow-y-auto overscroll-contain scroll-smooth scrollbar-thin scrollbar-track-gray-800 scrollbar-thumb-gray-500 p-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2   gap-[40px]">
             {Data.map((item, index) => (
               <div key={index} className="flex-1 flex flex-col justify-center gap-6 group">
                 {/* Top */}

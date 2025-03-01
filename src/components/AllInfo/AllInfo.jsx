@@ -4,6 +4,7 @@ import MultipleButton from "../MultipleButton/MultipleButton";
 import MyInfo from "../MyInfo/MyInfo";
 import { ExperData, EducData, AboutUsData, heading } from "../../Date";
 import { FaHtml5, FaCss3, FaJsSquare, FaBootstrap, FaReact } from 'react-icons/fa'; 
+import { SiTypescript } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 
 const SkillsData = [
@@ -12,7 +13,9 @@ const SkillsData = [
     { icon: <FaBootstrap />, name: 'BootStrap' },
     { icon: <RiTailwindCssFill />, name: 'Tailwind CSS' },
     { icon: <FaJsSquare />, name: 'JavaScript' },
-    { icon: <FaReact />, name: 'React' }
+    { icon: <FaReact />, name: 'React' },
+    { icon: <SiTypescript />, name: 'TypeScript' }
+
 ];
 
 const AllInfo = ({ Button }) => {
@@ -61,11 +64,11 @@ const [activeButton, setActiveButton] = useState('Experience');
   const { heading: selectedHeading, data: selectedData, type } = selectedInfo; // Destructured selectedInfo
 
   return (
-    <div className="container mx-auto grid grid-row xl:grid-cols-2 lg:place-content-center ">
+    <div className="container mx-auto grid grid-row lg:grid-cols-2 lg:place-content-center ">
       <div className="flex flex-col gap-[60px] ">
         <MultipleButton setShowData={handleButtonClick} Button={Button} activeButton={activeButton} />
       </div>
-      <div className="  min-h-[480px]  ring-offset-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 dark:ring-offset-slate-950 dark:focus-visible:ring-slate-300">
+      <div className="  max-h-[480px]  ring-offset-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 dark:ring-offset-slate-950 dark:focus-visible:ring-slate-300">
         <MyInfo
           heading={selectedHeading}
           ExperData={type === 'Skills' ? [] : selectedData}

@@ -4,9 +4,9 @@ import Stats from "../components/Stats";
 import MyCv from "../components/myCv";
 const Home = () => {
   return (
-    <div className="h-full pt-20">
+    <div className="h-full lg:pt-20 ">
       <div className="container mx-auto h-full">
-        <div className="flex flex-col max-h-[50vh] xl:flex-row items-center justify-between ">
+        <div className="flex flex-col  xl:max-h-[50vh] xl:flex-row items-center justify-between ">
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span>Front-End Developer</span>
@@ -29,10 +29,13 @@ const Home = () => {
             <Photo/>
           </div>
         </div>
-      </div>
-      <div className="pt-24">
+        <div className=" xl:mt-20">
       <Stats/>
       </div>
+       
+      </div>
+      
+    
    
     </div>
   )

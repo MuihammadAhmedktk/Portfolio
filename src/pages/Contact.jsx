@@ -42,14 +42,14 @@ const Contact = () => {
   return (
     <div className="my-6">
       <div className="container mx-auto">
-      <div className="flex flex-col xl:flex-row gap-[30px] ">
+      <div className="flex flex-col xl:flex-row gap-[30px]  ">
         {/* form */}
-        <div className="xl:h-[54%] order-2 xl:order-none">
-          <form className="flex flex-col gap-6 p-5 bg-[#27272c] rounded-lg">
+        <div className=" order-2 xl:order-none">
+          <form className="flex flex-col gap-6 p-5 bg-[#27272c] rounded-lg mx-h-[30vh]">
           <h3 className="text-4xl text-accent">Lets work together</h3>
           <p className="text-white/60">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quasi?</p>
        
-          <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-6  ">
           <FormInput type="text" placeholder="Your first name" />
           <FormInput type="text" placeholder="Your last name" />
           <FormInput type="email" placeholder="Your email" />
@@ -59,7 +59,7 @@ const Contact = () => {
     className="w-full h-[48px] rounded-md border border-white/10 bg-primary px-4 text-base text-white placeholder:text-white/10 focus:border-accent outline-none"
   >
     {services.map((service, index) => (
-      <option key={index} value={service}  className="text-black bg-white">
+      <option key={index} value={service}  className=" border-white/10 bg-primary px-4 text-base text-white placeholder:text-white/10 focus:border-accent outline-none">
         {service}
       </option>
     ))}

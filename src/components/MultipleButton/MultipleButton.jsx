@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 const MultipleButton = ({ Button, setShowData ,activeButton }) => {
   return (
-    <div className="flex flex-col w-full lg:max-w-[480px] mx-auto xl:mx-0 gap-2">
+    <div className="flex flex-col w-full lg:max-w-[380px] xl:max-w-[480px] mx-auto xl:mx-0 gap-2">
       <div>
         <h2 className="text-2xl md:text-3xl pb-4">Why hire me?</h2>
         <p className="pb-4 text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
