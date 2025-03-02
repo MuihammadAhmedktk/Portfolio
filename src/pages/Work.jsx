@@ -2,10 +2,9 @@ import { PiArrowUpRightLight } from "react-icons/pi";
 import { FaGithub } from "react-icons/fa";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import thumb1 from '../assets/thumb1.png'
 import weldingImage from '../assets/imge_1.png'
 import weldingImage2 from '../assets/img_2.png'
-
+import blogImage2 from '../assets/blog_img_2.png'
 import { useState } from "react";
 import WorksSliderBtns from "../components/Button/WorksSliderBtns";
 
@@ -27,7 +26,8 @@ const Projects =[
       title:"Trend Scribe",
       desc:"Welcome to Trend Scribe, your go-to platform for insightful articles and fresh perspectives. We cover topics ranging from technology and lifestyle to health and education. Explore, learn, and share your thoughts with us!.",
       stack:[{name:"Tailwind Css"}, {name:"React"}, {name:"TypeScript"}, {name:"Node ts"}, {name:"ExpressJs"}, {name:"MongoDB"}],
-      Image:thumb1,
+      Image:blogImage2,
+      Image1:blogImage2,
       live:"https://trendscribe-3y6o.onrender.com",
       github:"",
   }
