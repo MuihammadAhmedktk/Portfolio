@@ -3,6 +3,8 @@ import { FaGithub } from "react-icons/fa";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import thumb1 from '../assets/thumb1.png'
+import weldingImage from '../assets/imge_1.png'
+import weldingImage2 from '../assets/img_2.png'
 
 import { useState } from "react";
 import WorksSliderBtns from "../components/Button/WorksSliderBtns";
@@ -14,7 +16,8 @@ const Projects =[
       title:"GnWelding Portfolio",
       desc:"Professional welding services specializing in precision welding, fabrication, and repairs. Quality craftsmanship for industrial, commercial, and custom projects",
       stack:[{name:"Tailwind Css"},  {name:"React"},],
-      Image: thumb1,
+      Image: weldingImage,
+      Image1:weldingImage2,
       live:"https://gnwelding.netlify.app/",
       github:"",
   },
@@ -104,6 +107,12 @@ const Work = () => {
                   <div className="relative w-[100%] ">
                     <img
                       src={project.Image}
+                      className=" object-cover w-[100vw]"
+                      alt="Project"
+
+                    />
+                     <img
+                      src={project.Image1}
                       className=" object-cover w-[100vw]"
                       alt="Project"
 
