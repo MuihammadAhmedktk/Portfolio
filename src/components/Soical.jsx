@@ -1,13 +1,12 @@
 
 import PropTypes from 'prop-types';
-import { FaGithub, FaLinkedin, FaYoutube, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const socials = [
-  { icon: <FaGithub />, path: "https://github.com/your-profile" },
-  { icon: <FaLinkedin />, path: "https://linkedin.com/in/your-profile" },
-  { icon: <FaYoutube />, path: "https://youtube.com/channel/your-channel" },
-  { icon: <FaTwitter />, path: "https://twitter.com/your-profile" },
+  { icon: <FaGithub />, path: "https://github.com/MuihammadAhmedktk" },
+  { icon: <FaLinkedin />, path: "https://www.linkedin.com/in/muhammad-ahmed-80033119a/" },
+
 ];
 
 const Social = ({ containerStyle, iconStyles }) => {
@@ -16,7 +15,7 @@ const Social = ({ containerStyle, iconStyles }) => {
       {socials.map((items, index) => (
         <Link
           key={index}
-          to={{ pathname: items.path }}
+          to={items.path}
           target="_blank"
           rel="noopener noreferrer"
           className={iconStyles}

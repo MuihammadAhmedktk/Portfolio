@@ -5,6 +5,8 @@ import 'swiper/css';
 import weldingImage from '../assets/imge_1.png'
 import weldingImage2 from '../assets/img_2.png'
 import blogImage2 from '../assets/blog_img_2.png'
+import raAdmin from '../../src/assets/raAdmin.jpg'
+import raMain from "../assets/raAdmin.jpg"
 import { useState } from "react";
 import WorksSliderBtns from "../components/Button/WorksSliderBtns";
 
@@ -30,7 +32,29 @@ const Projects =[
       Image1:blogImage2,
       live:"https://trendscribe-3y6o.onrender.com",
       github:"",
-  }
+  },
+  {
+   num:"03",
+      category:"Finanace",
+      title:"Rafapay",
+      desc:"RafaPay is a digital platform that empowers Pakistani and their households by simplifying savings, investments, and budgeting through our innovative Rafapay Committees and personalized coaching. We aim to provide an inclusive, secure, and user-friendly experience to take control of their financial lives.",
+      stack:[{name:"Tailwind Css"}, {name:"React"}, {name:"TypeScript"}, {name:"Node ts"}, {name:"ExpressJs"}, {name:"MongoDB"}],
+      Image:raAdmin,
+      Image1:raMain,
+      live:"https://committee-1neu.onrender.com",
+      github:"",
+  },
+  //  {
+  //  num:"04",
+  //     category:"Blog",
+  //     title:"Trend Scribe",
+  //     desc:"Welcome to Trend Scribe, your go-to platform for insightful articles and fresh perspectives. We cover topics ranging from technology and lifestyle to health and education. Explore, learn, and share your thoughts with us!.",
+  //     stack:[{name:"Tailwind Css"}, {name:"React"}, {name:"TypeScript"}, {name:"Node ts"}, {name:"ExpressJs"}, {name:"MongoDB"}],
+  //     Image:blogImage2,
+  //     Image1:blogImage2,
+  //     live:"https://trendscribe-3y6o.onrender.com",
+  //     github:"",
+  // }
 
 ]
 
