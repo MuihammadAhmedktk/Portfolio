@@ -7,6 +7,12 @@ import weldingImage2 from '../assets/img_2.png'
 import blogImage2 from '../assets/blog_img_2.png'
 import raAdmin from '../../src/assets/raAdmin.jpg'
 import raMain from "../assets/raAdmin.jpg"
+import BMSAdmin from "../assets/bms2.png"
+import BMSMain from "../assets/bms1.png"
+import SMMimg1 from "../assets/smm1.png"
+import SMMimg2 from "../assets/smm2.png"
+import KIT1 from "../assets/kit1.png"
+import KIT2 from "../assets/kit2.png"
 import { useState } from "react";
 import WorksSliderBtns from "../components/Button/WorksSliderBtns";
 
@@ -42,6 +48,39 @@ const Projects =[
       Image:raAdmin,
       Image1:raMain,
       live:"https://committee-1neu.onrender.com",
+      github:"",
+  },
+   {
+   num:"04",
+      category:"Store",
+      title:"BMS Cleaner Store",
+      desc:"BMS is a leading, family-owned distributor of sanitation and cleaning supplies, dedicated to providing top-tier service and competitive prices. For over 30 years, they have been the go-to  for all cleaning needs, representing top industry brands to solve even the most difficult cleaning challenges",
+      stack:[{name:"Tailwind Css"}, {name:"React"},{name:"NextJs"}, {name:"TypeScript"}, {name:"Node ts"}, {name:"ExpressJs"}, {name:"MongoDB"}],
+      Image:BMSMain,
+      Image1:BMSAdmin,
+      live:"https://bms-store-app.vercel.app/",
+      github:"",
+  },
+   {
+   num:"05",
+      category:"SMM",
+      title:"EXAGHOST",
+      desc:"Our premium SMM panel has been providing real followers, real likes, real views, and real comments for all major social media platforms since 2014",
+      stack:[{name:"Css3"}, {name:"HTML5"}, {name:"JS"}, {name:"PHP"}, {name:"MySql"}],
+      Image:SMMimg1,
+      Image1:SMMimg2,
+      live:"https://exaghost.net/",
+      github:"",
+  },
+   {
+   num:"06",
+      category:"Food Order",
+      title:"DARAIN KITCHEN",
+      desc:"Premium Home Kitchen serving authentic Pulao with love. Experience the finest flavors crafted with passion. Order now for a delicious meal delivered to your doorstep.",
+      stack:[{name:"Tailwind Css"}, {name:"React"}, {name:"NextJS"},{name:"TypeScript"},{name:"NestJS"}, {name:"postgresql"}],
+      Image:KIT1,
+      Image1:KIT2,
+      live:"https://darainkitchen.vercel.app/",
       github:"",
   },
   //  {
